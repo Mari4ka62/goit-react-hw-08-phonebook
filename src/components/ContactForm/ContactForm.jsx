@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import css from './ContactForm.module.css';
 import { useDispatch, useSelector } from 'react-redux';
-import { addContact } from 'store/operations';
-import { selectContact } from 'store/selectors';
+import { addContact } from 'redux/contacts/operations';
+import { selectContact } from 'redux/contacts/selectors';
 import { toast } from 'react-hot-toast';
 
 export default function ContactForm() {
