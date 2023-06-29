@@ -2,6 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 import { initialState } from './initialState';
 import { addContact, deleteContact, fetchContacts } from './operations';
 import { toast } from 'react-hot-toast';
+import { logOut } from 'redux/user/operations';
 
 const contactsSlice = createSlice({
   name: 'contacts',
@@ -49,6 +50,11 @@ const contactsSlice = createSlice({
       state.isDeleting = false;
       state.error = action.payload;
       toast.error(`ERROR: ${state.error}`);
+    },
+    [logOut.fulfilled](state) {
+      state.items = [];
+      state.error = null;
+      state.isLoading = false;
     },
   },
 });
