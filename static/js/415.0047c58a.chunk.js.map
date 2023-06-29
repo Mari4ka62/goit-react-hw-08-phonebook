@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/415.0047c58a.chunk.js","mappings":"iKAUA,UARa,WACX,OACE,+BACE,0DAGL,C","sources":["pages/Home.jsx"],"sourcesContent":["import React from 'react';\n\nconst Home = () => {\n  return (\n    <>\n      <h1>Welcome to your contact book</h1>\n    </>\n  );\n};\n\nexport default Home;\n"],"names":[],"sourceRoot":""}
