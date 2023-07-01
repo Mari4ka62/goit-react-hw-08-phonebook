@@ -43,7 +43,7 @@ img {
 }
 .container {
   width: 500px;
-  margin: 50px auto 15px auto;
+  height: 100%;
 }
 .title {
   font-size: 30px;

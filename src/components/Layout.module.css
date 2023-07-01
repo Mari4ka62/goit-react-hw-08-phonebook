@@ -1,0 +1,12 @@
+.wrapper {
+  background-image: linear-gradient(
+    to left,
+    rgba(47, 48, 58, 0.1),
+    rgba(47, 48, 58, 0.5)
+  );
+  margin: 0 auto;
+  width: 1000px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 100vh;
+}
