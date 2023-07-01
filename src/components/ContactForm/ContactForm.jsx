@@ -24,7 +24,7 @@ export default function ContactForm() {
 
     const newContact = {
       name: e.target.elements.name.value,
-      phone: e.target.elements.number.value,
+      number: e.target.elements.number.value,
     };
 
     dispatch(addContact(newContact));

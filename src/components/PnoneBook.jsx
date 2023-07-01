@@ -4,7 +4,6 @@ import ContactList from './ContactList/ContactList';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchContacts } from 'redux/contacts/operations';
-import { Toaster } from 'react-hot-toast';
 import { selectError, selecttIsLoading } from 'redux/contacts/selectors';
 
 export function Phonebook() {
@@ -17,7 +16,6 @@ export function Phonebook() {
   }, [dispatch]);
   return (
     <div className="container">
-      <Toaster />
       <h2 className="title">Phonebook</h2>
       <ContactForm />
       <Filter />

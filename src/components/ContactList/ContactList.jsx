@@ -19,7 +19,7 @@ export default function ContactList() {
         actualContacts.map(contact => (
           <li key={contact.id} className={css.listItem}>
             <p className={css.text}>
-              {contact.name}: {contact.phone}
+              {contact.name}: {contact.number}
             </p>
             <button
               type="button"
